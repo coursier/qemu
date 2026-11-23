@@ -51,8 +51,6 @@ jobs:
             OSSHORT: "macos-golden-gate-aarch64"
           - OS: "macos-15"
             OSSHORT: "macos-sequoia-aarch64"
-          - OS: "macos-14"
-            OSSHORT: "macos-sonoma-aarch64"
           - OS: "macos-26-intel"
             OSSHORT: "macos-tahoe-amd64"
           - OS: "macos-15-intel"
@@ -214,8 +212,6 @@ jobs:
             OSSHORT: "macos-golden-gate-aarch64"
           - OS: "macos-15"
             OSSHORT: "macos-sequoia-aarch64"
-          - OS: "macos-14"
-            OSSHORT: "macos-sonoma-aarch64"
           - OS: "macos-26-intel"
             OSSHORT: "macos-tahoe-amd64"
           - OS: "macos-15-intel"
@@ -241,7 +237,6 @@ jobs:
         include:
           - OSSHORT: "macos-golden-gate-aarch64"
           - OSSHORT: "macos-sequoia-aarch64"
-          - OSSHORT: "macos-sonoma-aarch64"
           - OSSHORT: "macos-tahoe-amd64"
           - OSSHORT: "macos-sequoia-amd64"
     runs-on: ubuntu-latest
