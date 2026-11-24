@@ -35,9 +35,11 @@ SHARED_ARGS=(
   --disable-cocoa
   --disable-curses
   --disable-gcrypt
+  --disable-nettle
   --disable-plugins
   --disable-tpm
   --disable-debug-info
+  --disable-werror
 )
 
 WINDOWS_OS_ARGS=(
