@@ -85,17 +85,20 @@ jobs:
     - uses: msys2/setup-msys2@v2
       name: Setup msys2
       with:
+        msystem: UCRT64
         update: true
         install: >-
           curl
           git
           base-devel
-          mingw-w64-x86_64-toolchain
+          mingw-w64-ucrt-x86_64-toolchain
           python
           ninja
-          mingw-w64-x86_64-glib2
-          mingw-w64-x86_64-python-distlib
-          mingw-w64-x86_64-python-pip
+          mingw-w64-ucrt-x86_64-glib2
+          mingw-w64-ucrt-x86_64-libslirp
+          mingw-w64-ucrt-x86_64-pkgconf
+          mingw-w64-ucrt-x86_64-python-distlib
+          mingw-w64-ucrt-x86_64-python-pip
           python-setuptools
           unzip
     - uses: actions/checkout@v4
@@ -258,6 +261,7 @@ jobs:
     - uses: msys2/setup-msys2@v2
       name: Setup msys2
       with:
+        msystem: UCRT64
         update: true
         install: >-
           curl
@@ -311,6 +315,7 @@ jobs:
     - uses: msys2/setup-msys2@v2
       name: Setup msys2
       with:
+        msystem: UCRT64
         update: true
         install: >-
           curl
